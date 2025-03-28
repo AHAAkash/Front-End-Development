@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --btn-bg: #e0e0e0;
+  --btn-hover: #d5d5d5;
+  --operator-bg: #ff9800;
+  --operator-hover: #e68900;
+  --equals-bg: #4caf50;
+  --equals-hover: #45a049;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #222;
+  --text-color: #fff;
+  --btn-bg: #444;
+  --btn-hover: #555;
+  --operator-bg: #ff5722;
+  --operator-hover: #e64a19;
+  --equals-bg: #4caf50;
+  --equals-hover: #388e3c;
+}
+
+.container {
+  margin-top: 50px;
+  background-color: antiquewhite;
+}
+
+h1 {
+  background-image: url(calculator.jpg);
+  font-size: 28px;
+  color: #e68900;width: 1400px;height: 100px;
+}
+
+/* Theme Toggle Button - Positioned on the Right Side */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  background: var(--btn-bg);
+  border: none;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: var(--btn-hover);
+}
+
+.theme-toggle button {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* Calculator */
+.calculator {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  background: var(--btn-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  background: var(--btn-bg);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--btn-hover);
+}
+
+.operator {
+  background: var(--operator-bg);
+  color: white;
+}
+
+.operator:hover {
+  background: var(--operator-hover);
+}
+
+.equals {
+  background: var(--equals-bg);
+  color: white;
+  grid-column: span 2;
+}
+
+.equals:hover {
+  background: var(--equals-hover);
+}
+
+.zero {
+  grid-column: span 2;
+}
