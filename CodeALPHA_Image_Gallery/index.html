@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery For Wildlife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search images...">
+        <button id="search-btn">Search</button>
+    </div>
+    
+    <button id="show-all-btn">Show All Images</button>
+    
+    <div class="gallery" id="gallery" style="display: none;">
+        <div class="image-container">
+            <img src="images (1).jpg" alt="Image 1" onclick="openLightbox(this.src)">
+            <p class="caption">Beautiful Wildlife</p>
+        </div>
+        <div class="image-container">
+            <img src="images.jpg" alt="Image 2" onclick="openLightbox(this.src)">
+            <p class="caption">Wild Nature</p>
+        </div>
+        <div class="image-container">
+            <img src="download.jpg" alt="Image 3" onclick="openLightbox(this.src)">
+            <p class="caption">Birds in Action</p>
+        </div>
+        <div class="image-container">
+            <img src="download (1).jpg" alt="Image 4" onclick="openLightbox(this.src)">
+            <p class="caption">Serene Forest</p>
+        </div>
+        <div class="image-container">
+            <img src="download (2).jpg" alt="Image 5" onclick="openLightbox(this.src)">
+            <p class="caption">Majestic Lion</p>
+        </div>
+        <div class="image-container">
+            <img src="download (3).jpg" alt="Image 6" onclick="openLightbox(this.src)">
+            <p class="caption">Mountain View</p>
+        </div>
+        <div class="image-container">
+            <img src="download (5).jpg" alt="Image 7" onclick="openLightbox(this.src)">
+            <p class="caption">Wildlife in Action</p>
+        </div>
+        <div class="image-container">
+            <img src="download (6).jpg" alt="Image 8" onclick="openLightbox(this.src)">
+            <p class="caption">Jungle Adventure</p>
+        </div>
+        <div class="image-container">
+            <img src="download (7).jpg" alt="Image 9" onclick="openLightbox(this.src)">
+            <p class="caption">Forest Wonders</p>
+        </div>
+        <div class="image-container">
+            <img src="download (8).jpg" alt="Image 10" onclick="openLightbox(this.src)">
+            <p class="caption">Ocean Life</p>
+        </div>
+        <div class="image-container">
+            <img src="download (9).jpg" alt="Image 11" onclick="openLightbox(this.src)">
+            <p class="caption">Peaceful Valley</p>
+        </div>
+        <div class="image-container">
+            <img src="download (10).jpg" alt="Image 12" onclick="openLightbox(this.src)">
+            <p class="caption">Savannah Sunset</p>
+        </div>
+        <div class="image-container">
+            <img src="download (11).jpg" alt="Image 13" onclick="openLightbox(this.src)">
+            <p class="caption">Animal Tracks</p>
+        </div>
+        <div class="image-container">
+            <img src="download (12).jpg" alt="Image 14" onclick="openLightbox(this.src)">
+            <p class="caption">Rainforest Beauty</p>
+        </div>
+        <div class="image-container">
+            <img src="images (3).jpg" alt="Image 15" onclick="openLightbox(this.src)">
+            <p class="caption">Tropical Wildlife</p>
+        </div>
+        <div class="image-container">
+            <img src="images (4).jpg" alt="Image 16" onclick="openLightbox(this.src)">
+            <p class="caption">Elephant Herd</p>
+        </div>
+    </div>
+    
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <button id="back-btn" onclick="goBack()">Back</button>
+            <button id="prev-btn" onclick="prevImage()">Previous</button>
+            <button id="next-btn" onclick="nextImage()">Next</button>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
