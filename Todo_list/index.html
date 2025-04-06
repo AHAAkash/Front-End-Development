@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <main class="todo-app">
+    <header>
+      <h1 id="main-heading">📝 Todo App</h1>
+    </header>
+
+    <button onclick="toggleDarkMode()" class="btn-todo" style="margin-bottom: 20px;">
+      🌙 Toggle Dark Mode
+    </button>    
+    <section class="todo-form grid-container" aria-label="Add new todo">
+      <input
+        id="todo-input"
+        type="text"
+        placeholder="Enter a task..."
+        aria-label="Todo task input"
+      />
+      <input
+        id="todo-date"
+        type="date"
+        aria-label="Select due date"
+      />
+      <button
+        class="btn-todo"
+        onclick="addTodo();"
+        aria-label="Add todo button"
+      >
+        Add
+      </button>
+    </section>
+    <section class="todo-container grid-container" aria-live="polite">
+      <!-- Todo items will be appended here dynamically -->
+    </section>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
